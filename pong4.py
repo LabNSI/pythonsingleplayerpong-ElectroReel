@@ -57,7 +57,7 @@ while not end:
         # if the circle touches the lower and upper edges
         # reverse direction on y-axis
         if ___:
-            y_sens = ___
+            y_sens = -1
 
         # compute new coordonates
         x = x + ___
