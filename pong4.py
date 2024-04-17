@@ -48,8 +48,8 @@ while not end:
         #  - use UP, DOWN, LEFT, RIGHT to move circle by <speed> pixel
 
         if key[pygame.K_a]:
-        x = radius
-        y = radius
+            x = radius
+            y = radius
     
         if key[pygame.K_z]:
             x = WIDTH+radius
