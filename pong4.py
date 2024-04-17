@@ -63,17 +63,17 @@ while not end:
             x = WIDTH+radius
             y = HEIGHT+radius
 
-        if key[pygame.K_up]:
+        if key[pygame.K_UP]:
             x = x
             y += 1
-        if key[pygame.K_down]:
+        if key[pygame.K_DOWN]:
             x = x
             y = y - 1
             
-        if key[pygame.K_right]:
+        if key[pygame.K_RIGHT]:
             x = x - 1
             y = y
-        if key[pygame.K_left]:
+        if key[pygame.K_LEFT]:
             x = x + 1
             y = y
 
