@@ -37,10 +37,10 @@ while not end:
     key = pygame.key.get_pressed()
 
     if key[pygame.K_o]:
-        auto = ___
+        auto = True
 
     if key[pygame.K_m]:
-        auto = ___
+        auto = False
 
     if not auto:
         # Manual mode :
@@ -52,7 +52,7 @@ while not end:
         # if the circle touches the right and left edges
         # reverse direction on x-axis
         if ____:
-            x_sens = ____
+            x_sens = -1
 
         # if the circle touches the lower and upper edges
         # reverse direction on y-axis
