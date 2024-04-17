@@ -2,8 +2,8 @@ import pygame
 
 pygame.init()
 
-WIDTH = 300
-HEIGHT = 200
+WIDTH = 1500
+HEIGHT = 1000
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
 pygame.display.set_caption('My Game')
@@ -23,7 +23,7 @@ x = WIDTH//2
 y = HEIGHT//2
 pygame.draw.circle(screen, WHITE, (x, y), radius)  # Position is the center of the circle.
 
-speed = 1
+speed = 5
 x_sens = y_sens = 1
 auto = True
 end = False
@@ -50,31 +50,31 @@ while not end:
         if key[pygame.K_a]:
           x = radius
           y = radius
-    
+
         if key[pygame.K_z]:
-            x = WIDTH+radius
+            x = WIDTH-radius
             y = radius
-    
+
         if key[pygame.K_q]:
             x = radius
-            y = HEIGHT+radius
-    
+            y = HEIGHT-radius
+
         if key[pygame.K_s]:
-            x = WIDTH+radius
-            y = HEIGHT+radius
+            x = WIDTH-radius
+            y = HEIGHT-radius
 
         if key[pygame.K_UP]:
             x = x
-            y = y - 1
+            y = y - 5
         if key[pygame.K_DOWN]:
             x = x
-            y = y + 1
-            
+            y = y + 5
+
         if key[pygame.K_RIGHT]:
-            x = x + 1
+            x = x + 5
             y = y
         if key[pygame.K_LEFT]:
-            x = x - 1
+            x = x - 5
             y = y
 
     else:
@@ -89,8 +89,8 @@ while not end:
             y_sens = -1
 
         # compute new coordonates
-        x = x + 1
-        y = y + 1
+        x = x + 5
+        y = y + 5
 
 
     pygame.draw.circle(screen, WHITE, (x, y), radius)
@@ -98,6 +98,6 @@ while not end:
     pygame.display.update()
 
     # wait before trying it again
-    pygame.time.delay(5)
+    pygame.time.delay(20)
 
 pygame.quit()
