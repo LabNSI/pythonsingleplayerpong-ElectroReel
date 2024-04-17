@@ -49,7 +49,6 @@ while not end:
 
         
 
-
     else:
         # if the circle touches the right and left edges
         # reverse direction on x-axis
