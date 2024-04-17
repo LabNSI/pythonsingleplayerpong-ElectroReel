@@ -47,21 +47,23 @@ while not end:
         #  - use A, Z, Q, S to move circle on the corners
         #  - use UP, DOWN, LEFT, RIGHT to move circle by <speed> pixel
 
+        
+
 
     else:
         # if the circle touches the right and left edges
         # reverse direction on x-axis
-        if ____:
+        if x = WIDTH:
             x_sens = -1
 
         # if the circle touches the lower and upper edges
         # reverse direction on y-axis
-        if ___:
+        if y = HEIGHT:
             y_sens = -1
 
         # compute new coordonates
-        x = x + ___
-        y = y + ___
+        x = x + 1
+        y = y + 1
 
 
     pygame.draw.circle(SCREEN, WHITE, (x, y), radius)
