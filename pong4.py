@@ -29,7 +29,7 @@ auto = True
 end = False
 
 while not end:
-    SCREEN.fill(RED)
+    screen.fill(RED)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             end = True
@@ -48,8 +48,8 @@ while not end:
         #  - use UP, DOWN, LEFT, RIGHT to move circle by <speed> pixel
 
         if key[pygame.K_a]:
-            x = radius
-            y = radius
+          x = radius
+          y = radius
     
         if key[pygame.K_z]:
             x = WIDTH+radius
@@ -65,16 +65,16 @@ while not end:
 
         if key[pygame.K_UP]:
             x = x
-            y += 1
+            y = y - 1
         if key[pygame.K_DOWN]:
             x = x
-            y = y - 1
+            y = y + 1
             
         if key[pygame.K_RIGHT]:
-            x = x - 1
+            x = x + 1
             y = y
         if key[pygame.K_LEFT]:
-            x = x + 1
+            x = x - 1
             y = y
 
     else:
@@ -93,7 +93,7 @@ while not end:
         y = y + 1
 
 
-    pygame.draw.circle(SCREEN, WHITE, (x, y), radius)
+    pygame.draw.circle(screen, WHITE, (x, y), radius)
 
     pygame.display.update()
 
