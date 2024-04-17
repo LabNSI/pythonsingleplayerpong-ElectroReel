@@ -47,7 +47,35 @@ while not end:
         #  - use A, Z, Q, S to move circle on the corners
         #  - use UP, DOWN, LEFT, RIGHT to move circle by <speed> pixel
 
-        
+        if key[pygame.K_a]:
+        x = radius
+        y = radius
+    
+        if key[pygame.K_z]:
+            x = WIDTH+radius
+            y = radius
+    
+        if key[pygame.K_q]:
+            x = radius
+            y = HEIGHT+radius
+    
+        if key[pygame.K_s]:
+            x = WIDTH+radius
+            y = HEIGHT+radius
+
+        if key[pygame.K_up]:
+            x = x
+            y += 1
+        if key[pygame.K_down]:
+            x = x
+            y = y - 1
+            
+        if key[pygame.K_right]:
+            x = x - 1
+            y = y
+        if key[pygame.K_left]:
+            x = x + 1
+            y = y
 
     else:
         # if the circle touches the right and left edges
