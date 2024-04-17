@@ -80,12 +80,12 @@ while not end:
     else:
         # if the circle touches the right and left edges
         # reverse direction on x-axis
-        if x = WIDTH:
+        if x == WIDTH:
             x_sens = -1
 
         # if the circle touches the lower and upper edges
         # reverse direction on y-axis
-        if y = HEIGHT:
+        if y == HEIGHT:
             y_sens = -1
 
         # compute new coordonates
